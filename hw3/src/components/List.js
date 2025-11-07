@@ -48,7 +48,7 @@ export default function List() {
     <div>
       <NavBar />
       <div className="d-flex flex-column p-3 w-50 mx-auto rounded">
-        <h2 className="text-center mb-4">South American Countries</h2>
+        <h1 className="text-center mb-4">South American Countries</h1>
 
         {loading && <p>Loading countries...</p>}
         {error && <p className="text-danger">Error: {error}</p>}

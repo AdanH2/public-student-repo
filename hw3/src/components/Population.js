@@ -94,9 +94,9 @@ export default function Population() {
     <div>
       <NavBar />
       <div className="p-3 w-75 mx-auto rounded">
-        <h2 className="text-center mb-4">
+        <h1 className="text-center mb-4">
           Population by Country (South America)
-        </h2>
+        </h1>
 
         {loading && <p>Loading population data...</p>}
         {error && <p className="text-danger">Error: {error}</p>}

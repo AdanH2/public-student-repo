@@ -118,7 +118,7 @@ export default function PopulationPie() {
     <div>
       <NavBar />
       <div className="p-3 w-75 mx-auto rounded">
-        <h2 className="text-center mb-4">Population Pie Chart</h2>
+        <h1 className="text-center mb-4">Population Pie Chart</h1>
 
         {loading && <p>Loading data...</p>}
         {error && <p className="text-danger">Error: {error}</p>}

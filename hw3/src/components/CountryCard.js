@@ -9,7 +9,7 @@ export default function CountryCard({ country }) {
     >
       <img
         src={flagSrc}
-        alt={name}
+        alt={`${name}'s flag`}
         width="50"
         height="30"
         style={{ marginRight: 12 }}
