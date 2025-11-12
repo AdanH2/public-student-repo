@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import NavBar from "./NavBar";
 import CountryCard from "./CountryCard";
 import { API, SOUTH_AMERICAN_COUNTRIES } from "../constants/constants";
 
@@ -46,7 +45,6 @@ export default function List() {
 
   return (
     <div>
-      <NavBar />
       <div className="d-flex flex-column p-3 w-50 mx-auto rounded">
         <h1 className="text-center mb-4">South American Countries</h1>
 

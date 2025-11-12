@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import NavBar from "./NavBar";
 import { API, SOUTH_AMERICAN_COUNTRIES } from "../constants/constants";
 
 import {
@@ -92,7 +91,6 @@ export default function Population() {
 
   return (
     <div>
-      <NavBar />
       <div className="p-3 w-75 mx-auto rounded">
         <h1 className="text-center mb-4">
           Population by Country (South America)

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import NavBar from "./NavBar";
 import { API, SOUTH_AMERICAN_COUNTRIES } from "../constants/constants";
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from "chart.js";
@@ -116,7 +115,6 @@ export default function PopulationPie() {
 
   return (
     <div>
-      <NavBar />
       <div className="p-3 w-75 mx-auto rounded">
         <h1 className="text-center mb-4">Population Pie Chart</h1>
 
@@ -126,21 +124,6 @@ export default function PopulationPie() {
         {!loading && !error && countries.length > 0 && (
           <div style={{ height: 500 }}>
             <Pie data={data} options={options} />
-          </div>
-        )}
-
-        {!loading && !error && other && other.length > 0 && (
-          <div className="mt-3">
-            <details>
-              <summary>Other includes ({other.length})</summary>
-              <ul>
-                {other.map((c) => (
-                  <li key={c.cca3 || c.ccn3 || c.name?.common}>
-                    {c.name?.common}
-                  </li>
-                ))}
-              </ul>
-            </details>
           </div>
         )}
 

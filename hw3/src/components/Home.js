@@ -1,9 +1,6 @@
-import NavBar from "./NavBar";
-
 export default function Home() {
   return (
     <div>
-      <NavBar />
       <div className="container d-flex flex-column align-items-center p-3 w-50">
         <h1>Welcome to the Home Page</h1>
         <p>

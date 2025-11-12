@@ -15,7 +15,7 @@ export default function CountryCard({ country }) {
         style={{ marginRight: 12 }}
       />
       <div>
-        <h4 className="m-0">{name}</h4>
+        <h2 className="m-0 fs-4">{name}</h2>
         <p className="mb-0">
           Population:{" "}
           {country.population ? country.population.toLocaleString() : "N/A"}
